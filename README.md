@@ -1,1 +1,1 @@
-- [01 Components](https://github.com/olehhapuk/fe_pro_6_react)
+- [01 Components](https://github.com/olehhapuk/fe_pro_6_react/tree/01_components)
