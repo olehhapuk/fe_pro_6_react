@@ -1,17 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+// <React.Fragment> | <></>
+
+const container = (
+  <React.Fragment>
+    <h1>My first react title</h1>
+    <p>Lorem ipsum</p>
+  </React.Fragment>
 );
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(container);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// const link = React.createElement(
+//   'a',
+//   {
+//     href: 'https://reactjs.org/',
+//     target: '_blank',
+//     rel: 'noreferrer noopener',
+//   },
+//   'Посилання на reactjs.org'
+// );
+
+// const linkJSX = (
+//   <a href="https://reactjs.org/" target="_blank" rel="noreferrer noopener">
+//     Посилання на reactjs.org
+//   </a>
+// );
