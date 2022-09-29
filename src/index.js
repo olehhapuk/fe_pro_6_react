@@ -1,46 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Card from './components/Card/Card';
-import './index.css';
 
-const products = [
-  {
-    id: '1',
-    name: 'Футболка',
-    description: 'Чорна футболка',
-    price: 10.99,
-    available: true,
-  },
-  {
-    id: '2',
-    name: 'Штани',
-    description: 'Білі штани',
-    price: 15.99,
-    available: false,
-  },
-  {
-    id: '3',
-    name: 'Куртка',
-    description: 'Чорна джинсова куртка',
-    price: 100.99,
-    available: true,
-  },
+import './styles/index.css';
+import Card from './components/Card/Card';
+import Container from './components/Container/Container';
+import BooksList from './components/BooksList/BooksList';
+
+const favouriteBooks = [
+  { id: 'id-1', name: 'JS for beginners' },
+  { id: 'id-2', name: 'React basics' },
+  { id: 'id-3', name: 'React Router overview' },
+  { id: 'id-4', name: 'Redux in depth' },
 ];
 
 const container = (
-  <React.Fragment>
-    <h1>My first react title</h1>
-    <p>Lorem ipsum</p>
-    {products.map((product) => (
-      <Card
-        key={product.id}
-        name={product.name}
-        description={product.description}
-        price={product.price}
-        available={product.available}
-      />
-    ))}
-  </React.Fragment>
+  <Container>
+    <BooksList>
+      {favouriteBooks.map((book) => (
+        <Card key={book.id} name={book.name} />
+      ))}
+    </BooksList>
+  </Container>
 );
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
