@@ -1,16 +1,12 @@
-import Container from './Container/Container';
-import Button from './Button/Button';
+import FriendList from './FriendList/FriendList';
+import friends from './FriendList/friends.json';
 
-export default function App() {
+function App() {
   return (
-    <Container>
-      <Button type="button">Default</Button>
-      <Button type="button" variant="active">
-        Active
-      </Button>
-      <Button type="button" variant="error">
-        Error
-      </Button>
-    </Container>
+    <div>
+      <FriendList friends={friends} />
+    </div>
   );
 }
+
+export default App;
