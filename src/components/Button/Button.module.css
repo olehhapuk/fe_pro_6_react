@@ -1,0 +1,52 @@
+.btn {
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: none;
+  font-family: inherit;
+  font-size: 14px;
+  background-color: #eec0c6;
+  color: black;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: background-color 150ms linear;
+}
+
+/* Default */
+
+.default {
+  composes: btn;
+  background-color: #dbdbdb;
+  border-color: #707070;
+}
+
+.default:hover {
+  background-color: #c7c7c7;
+}
+
+/* /Default */
+
+/* Active */
+
+.active {
+  composes: btn;
+  background-color: #80ff72;
+}
+
+.active:hover {
+  background-color: #51d45c;
+}
+
+/* /Active */
+
+/* Error */
+
+.error {
+  composes: btn;
+  background-color: #ff8772;
+}
+
+.error:hover {
+  background-color: #f1705f;
+}
+
+/* /Error */
