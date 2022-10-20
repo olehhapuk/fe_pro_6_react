@@ -21,5 +21,6 @@ export default function FriendList({ friends }) {
 }
 
 FriendList.propTypes = {
-  friends: PropTypes.array.isRequired,
+  // friends: PropTypes.array.isRequired, // Будь-який масив
+  friends: PropTypes.arrayOf(PropTypes.object).isRequired, // Масив об'єктів
 };

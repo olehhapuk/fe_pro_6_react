@@ -1,0 +1,45 @@
+.profile {
+  border-radius: 4px;
+  background-color: #fff;
+  width: 500px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.name {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.tag {
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.location {
+  margin: 0;
+}
+
+.stats {
+}
+
+.stats > li {
+}
+
+.label {
+}
+
+.quantity {
+}
