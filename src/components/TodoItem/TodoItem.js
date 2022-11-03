@@ -1,9 +1,15 @@
+import styles from './TodoItem.module.css';
+
 function TodoItem({ finished, summary, priority }) {
   return (
-    <div>
-      <input type="checkbox" defaultChecked={finished} />
-      <p>{summary}</p>
-      <span />
+    <div className={styles.item}>
+      <input
+        type="checkbox"
+        className={styles.checkbox}
+        defaultChecked={finished}
+      />
+      <p className={styles.summary}>{summary}</p>
+      <span className={styles[priority]} />
     </div>
   );
 }
